@@ -1,0 +1,110 @@
+
+.grid-container {
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "main main right"
+    "footer footer footer";
+    grid-gap: 0;
+    background-color:white;
+}
+
+#cover_image{
+    width:100%;
+    height:auto;
+    }
+
+.header{
+    grid-area: header;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+}
+
+
+/* Nave Bar*/
+/* list format and background color*/
+.menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+/*nav bar alignment*/
+.menu >ul >li {
+    float:left;
+  }
+/* list text formatting */
+  .menu >ul>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* hover color */
+.menu>ul>li>a:hover {
+    background-color:grey;
+}
+
+.main{
+    grid-area: main;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.right{
+    grid-area: right;
+    width:500px;
+
+}
+
+ .footer{
+    grid-area: footer;
+}
+
+#footer{
+    text-align:center;
+    background-color:black;
+    color: white;
+}
+
+
+
+#hobby_photos {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+
+ 
+}
+
+#hobby_photos>img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+#butterfly {
+    width: 100%;
+    height: auto;
+}
+
+#page_title{
+    font-size:70px;
+    color:black;
+    text-align:center;
+    line-height: 10px;;
+}
+
+h3{
+    font-size:30px;
+    text-align:left;
+} 
